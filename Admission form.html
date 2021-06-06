@@ -8,12 +8,17 @@
   </head>
   <body>
     <form action="">
-      <img class="logo" src=" " alt="" /> <br />
-      <h1>RGPV Admission Form</h1>
+      <center>
+        <h3>RGPV Admission Form</h3>
+      </center>
+      <br />
+      <hr />
+      <br />
       <label for="serial">Sr.</label>
       <input type="text" name="serial" value="RS/1301/" />
       <label for="date">Date</label>
       <input class="date" type="date" name="date" /><br />
+
       <label for="fname">First Name</label>
       <input type="text" name="fname" placeholder="First name" />
       <label for="lname">Last Name</label>
@@ -21,36 +26,27 @@
       <label for="dob">DOB</label>
       <input type="date" name="dob" />
       <label for="bgroup">Blood Group</label>
-      <input
-        type="list"
-        name="bgroup"
-        options1="A+"
-        options2="A-"
-        options3="B+"
-        options4="B-"
-        options5="AB+"
-        options6="AB-"
-        options7="O+"
-        options8="O-"
-      />
+      <select name="bgroup" class="rounded border border-black">
+        <option value="no">A+</option>
+        <option value="no">A-</option>
+        <option value="no">B+</option>
+        <option value="no">AB+</option>
+        <option value="no">AB-</option>
+        <option value="no">O+</option>
+        <option value="no">O-</option>
+      </select>
       <br />
-      <label for="gender">Gender</label>
-      <input
-        type="radio"
-        name="gender"
-        options1="Male"
-        options2="Female"
-        options3="other"
-      />
+      <label for="gender">Gender:</label>
+      Male<input class="gender" type="radio" name="gender" value="" />
+      Female<input class="gender" type="radio" name="gender" value="" />
+      other<input class="gender" type="radio" name="gender" value="" />
       <label for="category">Category</label>
-      <input
-        type="radio"
-        name="category"
-        options1="UR"
-        options2="SC"
-        options3="ST"
-        options4="OBC"
-      />
+      <select name="category" class="rounded border border-black">
+        <option value="no">UR</option>
+        <option value="no">ST</option>
+        <option value="no">SC</option>
+        <option value="no">OBC</option>
+      </select>
       <br />
       <label for="contact">Contact</label>
       <input type="text" name="contact" value="+91" />
@@ -63,19 +59,69 @@
       <label for="mothername">Mother's Name</label>
       <input type="text" name="mothername" />
       <label for="mjob">Occupation</label>
-      <input type="text" name="mjob" /><br /><br />
+      <input type="text" name="mjob" /><br />
       <label for="pcontact">Parent's Contact</label>
       <input type="text" name="pcontact" />
       <label for="pemail">Parent's Email</label>
       <input type="email" name="pemail" /><br />
       <label for="address">Address</label>
-      <input type="text" name="address" />
+      <textarea name="address" cols="20" rows="2"></textarea>
       <label for="zip">Zip Code</label>
       <input type="text" name="zip" /><br />
       <label for="state">State</label>
       <input type="text" name="state" />
-      <label for="district">District</label><br />
-      <input type="button" value="Submit" />
+      <label for="district">District</label>
+      <input type="text" name="district" /><br />
+      <label for="Qualification">Qualification</label>
+      <select name="Qualification">
+        <option value="">10<sup>th</sup></option>
+        <option value="">12<sup>th</sup></option>
+        <option value="">UG</option>
+        <option value="">PG</option>
+      </select>
+      <label for="percentage">Percentage/CGPA</label>
+      <input type="text" name="percentage" /><br />
+      <center><input id="button" type="button" value="Submit" /></center>
     </form>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background: #000;
+      }
+      form {
+        color: greenyellow;
+        margin: auto;
+        margin-top: 5em;
+        border: 1px solid white;
+        width: 35em;
+        padding: 0em 2em;
+        font-size: 22px;
+      }
+      input {
+        border-radius: 5px;
+        background-color: khaki;
+        padding: 4px;
+        margin: 12px;
+        width: 9.3em;
+        font-size: 15px;
+      }
+      #button {
+        margin: 19px 0px !important;
+        width: 5em !important;
+      }
+      h3 {
+        font-size: 27px;
+        margin-top: 1.5em;
+      }
+      label {
+        margin-left: 3em;
+      }
+      .gender {
+        width: 15px;
+      }
+    </style>
   </body>
 </html>

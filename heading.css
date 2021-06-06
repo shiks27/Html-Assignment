@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #000;
+}
+h1 {
+  color: #0000ff;
+  margin-top: 5em;
+}
+
+p {
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+}
+
+ul {
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 24px;
+}
